@@ -77,9 +77,9 @@ return [
     |
     */
 
-    'locale' => env('APP_DEFAULT_LOCALE', 'en'),
+    'locale' => env('APP_DEFAULT_LOCALE', 'fr'),
 
-    'locales' => ['fr', 'en', 'nl', 'de', 'es', 'it', 'ru', 'eo'],
+    'locales' => ['fr'],
 
     /*
     |--------------------------------------------------------------------------
