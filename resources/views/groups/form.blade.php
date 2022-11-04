@@ -48,3 +48,11 @@
         {!! Form::select('status', ['0' => trans('group.normal'), '10' => trans('group.pinned'), '-10' => trans('group.archived')], null, ['class' => 'form-control']) !!}
     </div>
 @endcan
+
+@can('changeGroupStatus', $group)
+    <div class="form-group">
+        {!! Form::label('ga_id', 'GA Id (optionnel, permet de synchroniser les évènements du GA)') !!}
+        {!! Form::text('ga_id', null, ['class' => 'form-control']) !!}
+    </div>
+@endcan
+
