@@ -109,3 +109,10 @@ Illustrations : Raphaëlle Goffaux
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE5NDcxNjg1MjZdfQ==
 -->
+
+## Troobleshooting~
+If 403 error happens when accessing to logo in storage try in public directory:
+
+```bash
+ln -s  ../storage/app/public/ storage
+```
