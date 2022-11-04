@@ -293,6 +293,7 @@ class GroupController extends Controller
 
         $group->name = $request->input('name');
         $group->body = $request->input('body');
+        $group->ga_id = $request->input('ga_id');
         
         if (Gate::allows('changeGroupStatus', $group)) {
             $group->status = $request->input('status');
