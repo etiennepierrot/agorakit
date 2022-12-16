@@ -184,6 +184,7 @@ Route::group(['middleware' => ['web']], function () {
     // General action create route
     Route::get('actions/create', 'GroupActionController@create')->name('actions.create');
     Route::post('actions/create', 'GroupActionController@store')->name('actions.store');
+    Route::get('actions/import_action_populaire', 'ActionController@import_action_populaire')->name('actions.import_action_populaire');
 
     // Users
 
