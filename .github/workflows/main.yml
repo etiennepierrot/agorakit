@@ -2,9 +2,9 @@ name: Synchro action pop
 
        # Controls when the workflow will run
 on:
-  # Triggers the workflow every 5 minutes
+  # Triggers the workflow every 15 minutes
   schedule:
-    - cron: "*/1 * * * *"
+    - cron: "*/15 * * * *"
 
      # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
