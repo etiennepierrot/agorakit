@@ -27,6 +27,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\ImportGroup::class,
         \App\Console\Commands\EnforceUniqueUsernames::class,
         \App\Console\Commands\EnforceUniqueGroupSlugs::class,
+        \App\Console\Commands\SynchroActionPopulaire::class,
     ];
 
     /**
@@ -52,5 +53,8 @@ class Kernel extends ConsoleKernel
 
         $schedule->command('agorakit:cleanupdatabase')
         ->daily();
+        
+        $schedule->command('agorakit:synchro')
+        ->everyFiveMinutes();
     }
 }

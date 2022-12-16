@@ -30,6 +30,8 @@ class Action extends Model
         'stop'     => 'required',
     ];
 
+    protected $fillable = ['external_ref'];
+
     protected $with = ['attending', 'notAttending']; // always load participants with actions
 
     protected $table = 'actions';

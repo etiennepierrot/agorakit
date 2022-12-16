@@ -323,6 +323,11 @@ class Group extends Model
         return $query->where('updated_at', '>',  Carbon::now()->subMonths(3)->toDateTimeString());
     }
 
+    public function hasGaIdSetup($query)
+    {
+        return $query->where('ga_id', '<>',  null);
+    }
+
     /**
     * Return true if the group has a cover image.
     */
