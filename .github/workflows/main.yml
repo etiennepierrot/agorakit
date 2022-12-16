@@ -1,0 +1,17 @@
+name: Synchro action pop
+
+       # Controls when the workflow will run
+on:
+  # Triggers the workflow every 5 minutes
+  schedule:
+    - cron: "*/5 * * * *"
+
+     # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    name: Trigger Synchro action pop
+    runs-on: ubuntu-latest
+    steps:
+      - name: cURL request
+        # Hit the webhook endpoint to rebuild  from the "main" branch
+        run: curl -X GET -d https://ga18-agora.info/actions/import_action_populaire
