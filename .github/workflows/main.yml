@@ -14,4 +14,4 @@ jobs:
     steps:
       - name: cURL request
         # Hit the webhook endpoint to rebuild  from the "main" branch
-        run: curl -X GET -d https://ga18-agora.info/actions/import_action_populaire
+        run: curl https://ga18-agora.info/actions/import_action_populaire
