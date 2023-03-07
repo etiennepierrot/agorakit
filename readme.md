@@ -90,7 +90,7 @@ It's all explained here :  https://github.com/philippejadin/agorakit/wiki/How-ca
 
 
 ## Security Vulnerabilities
-Please drop a line to info (at) agorakit.org . Security issues will be dealt with care and speed.
+Please drop a line to info (at agorakit.org . Security issues will be dealt with care and speed.
 
 
 ## Contact
